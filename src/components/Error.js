@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import loading from './spinner.gif'
 
-export default class Spinner extends Component {
+export default class Error extends Component {
     render() {
         return (
             <div className="text-center">
-                <img src={loading} alt=""/>
+                <h5>App not working due to an api request</h5>
             </div>
         )
     }
