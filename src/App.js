@@ -3,6 +3,7 @@ import './App.css';
 import React, { Component } from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
+import Error from './Error/Error';
 
 export default class App extends Component {
  
@@ -10,6 +11,7 @@ export default class App extends Component {
     return (
       <div>
         <Navbar/>
+        <Error/>
         <News pageSize={5} country="in" category="science"/>
         
       </div>
